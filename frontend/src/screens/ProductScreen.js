@@ -23,7 +23,7 @@ const ProductScreen = ({ history, match }) => {
     },[dispatch, match])
     
     const submitHandler = () => {
-        history.push(`/cart/${match.params.id}?qty={qty}`)
+        history.push(`/cart/${match.params.id}?qty=${qty}`)
     }
 
 
@@ -97,14 +97,12 @@ const ProductScreen = ({ history, match }) => {
                                                                         <option key={x + 1} value={x + 1}>
                                                                         {x + 1}
                                                                         </option>
-                                                                    )
-                                                                    )}
+                                                                ))}
                                                      </Form.Control>
                                                 </Col>
                                             </Row>
                                         </ListGroupItem>
                                     )}
-
                                 <ListGroupItem>
                                     <Button 
                                         onClick={submitHandler}
@@ -124,3 +122,12 @@ const ProductScreen = ({ history, match }) => {
 }
 
 export default ProductScreen
+
+
+
+//Note:
+// we can use this method to convert number to array.
+// [...Array(4).keys()] => [0,1,2,3]
+//above we have [...Array(product.countInStock).keys()] here product.countInStock is a number for each object in the data base 
+//so we can convert those number to array then loop through it.
+
