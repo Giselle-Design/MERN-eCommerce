@@ -87,13 +87,7 @@ export const listProducts = (keyword = '', pageNumber = '') => async (dispatch) 
         type: PRODUCT_DELETE_SUCCESS,
       })
     } catch (error) {
-      // const message =
-      //   error.response && error.response.data.message
-      //     ? error.response.data.message
-      //     : error.message
-      // if (message === 'Not authorized, token failed') {
-      //   dispatch(logout())
-      // }
+      
       dispatch({
         type: PRODUCT_DELETE_FAIL,
         payload: 

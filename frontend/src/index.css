@@ -13,6 +13,8 @@ h3 {
 
 .fa-heart {
     color: red;
+    margin-top: 10px; 
+
 }
 
 h1 {
@@ -54,5 +56,9 @@ h2 {
 
 .create {
     margin-top: 20px;
+}
+
+.go {
+    margin-top: 30px;
 }
 
