@@ -16,7 +16,7 @@ const CarouselBox = () => {
                     <img
                     className="d-block w-100"
                     src="https://images.unsplash.com/photo-1505944270255-72b8c68c6a70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                    alt="Third slide"
+                    alt="Second slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item className='Item'>

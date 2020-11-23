@@ -61,7 +61,7 @@ const ProductListScreen = ({ history, match }) => {
   ])
 
   const deleteHandler = (id) => {
-    if (window.confirm('Are you sure')) {
+    if (window.confirm('Are you sure?')) {
       dispatch(deleteProduct(id))
     }
   }
@@ -84,8 +84,8 @@ const ProductListScreen = ({ history, match }) => {
       </Row>
       {loadingDelete && <Loader />}
       {errorDelete && <Message variant='danger'>{errorDelete}</Message>}
-      {loadingCreate && <Loader />}
-      {errorCreate && <Message variant='danger'>{errorCreate}</Message>}
+      {loadingCreate && <Loader />} 
+      {errorCreate && <Message variant='danger'>{errorCreate}</Message>} 
       {loading ? (
         <Loader />
       ) : error ? (
@@ -129,7 +129,7 @@ const ProductListScreen = ({ history, match }) => {
               ))}
             </tbody>
           </Table>
-          <Paginate pages={pages} page={page} isAdmin={true} />
+          <Paginate pages={pages} page={page} isAdmin={true} /> 
         </>
       )}
     </>
